@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Home</title>
+  
+  <!--STUFF FOR FOUNDATION-->
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <script src="javascripts/modernizr.foundation.js"></script>
+  <!--Javascript stuff for foundation-->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+  <!--END STUFF FOR FOUNDATION-->
+  
+  
+  
+  <!--Include JQuery UI stuff-->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  
+  <!--Include weather plug in stuff-->
+  
+  
+</head>
+<body>
+  <!-- Header and Nav -->
+  <div class="row">
+  
+    <div class="seven columns">
+	  <!--USED GET HERE-->
+		<div id='searchDiv' class="nav-bar right">
+		<form id='autocomplete' method="GET" action="http://www.google.com/search">
+				<div class="two mobile-one columns">
+					<label id='searchLabel' class='right inline'>Google</label>
+				</div>
+				<div id='searchBar'class="eight mobile-three columns">
+					<input class='right inline' type="text" name="q" size="31" maxlength="255" value="" />
+				</div>
+				<div id='searchButton' class='two columns'>
+					<input class='small round button' type="submit" name="submit" value="Search"/>
+				</div>
+		</form>
+		</div>
+    </div>
+	
+    <div class="five columns">
+      <ul class="nav-bar right">
+        <li><a href="http://www.gmail.google.com">Gmail</a></li>
+        <li><a href="http://www.youtube.com">YouTube</a></li>
+        <li><a href="http://www.maps.google.com">Maps</a></li>
+        <li><a href="http://www.drive.google.com">Drive</a></li>
+      </ul>
+    </div>
+	
+  </div>
+  
+  <!-- End Header and Nav -->
+  
+
+  
+  <!-- Footer-->
+  <footer class="row">
+    <div class="twelve columns">
+      <hr />
+      <div class="row">
+        <div class="six columns">
+          <p>&copy; Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="six columns">
+          <ul class="link-list right">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+  </footer>
+  
+  
+</body>
+</html>

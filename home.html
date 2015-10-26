@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Home</title>
+  
+  <!--STUFF FOR FOUNDATION-->
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <script src="javascripts/modernizr.foundation.js"></script>
+  <!--Javascript stuff for foundation-->
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/foundation.min.js"></script>
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/app.js"></script>
+  <!--END STUFF FOR FOUNDATION-->
+  
+  
+  
+  <!--Include JQuery UI stuff-->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  
+  <!--Background changer function-->
+  <script>
+  
+  
+  function changeBGImage(myImage){
+     document.body.background = myImage;
+  }
+  
+  
+  </script>
+  
+  
+</head>
+<body onload="changeBGImage('<?php 
+
+if (1==2) {
+	echo "WAT";
+} else {
+	echo "images/backgrounds/background.jpg";
+}
+
+
+
+?>');">
+  <!-- Header and Nav -->
+  <div class="row">
+  
+    <div class="seven columns">
+	  <!--USED GET HERE-->
+		<div id='searchDiv' class="nav-bar right">
+		<form id='autocomplete' method="GET" action="http://www.google.com/search">
+				<div class="two mobile-one columns">
+					<label id='searchLabel' class='right inline'>Google</label>
+				</div>
+				<div id='searchBar'class="eight mobile-three columns">
+					<input class='right inline' type="text" name="q" size="31" maxlength="255" value="" />
+				</div>
+				<div id='searchButton' class='two columns'>
+					<input class='small round button' type="submit" name="submit" value="Search"/>
+				</div>
+		</form>
+		</div>
+    </div>
+	
+    <div class="five columns">
+      <ul class="nav-bar right">
+        <li><a href="http://www.gmail.google.com">Gmail</a></li>
+        <li><a href="http://www.youtube.com">YouTube</a></li>
+        <li><a href="http://www.maps.google.com">Maps</a></li>
+        <li><a href="http://www.drive.google.com">Drive</a></li>
+      </ul>
+    </div>
+	
+  </div>
+  
+  <!-- End Header and Nav -->
+  
+  <!-- Three-up Content Blocks -->
+  <!--ROW 1-->
+  <div class="row">
+  
+	<div class="four columns myWidgets">
+		<div id="accordion" class='left'>
+			<h4>Quotes of the Day</h4>
+			<div>
+				<iframe id="remote_iframe_88" class="gwt-Frame" scrolling="no" frameborder="0" name="remote_iframe_88" src="http://www-ig-opensocial.googleusercontent.com/gadgets/ifr?exp_rpc_js=1&exp_track_js=1&url=http%3A%2F%2Fwww.gstatic.com%2Fig%2Fmodules%2Fquotes%2Fquotes.xml&container=ig&view=home&lang=en&country=US&sanitize=0&v=59ec753c1b4ea893&parent=http://www.google.com&libs=core:core.io:core.iglegacy:auth-refresh&is_signedin=1&synd=ig&mid=88#st=c%3Dig%26e%3DAPu7icqblEUTNP3okx4Ydr4HOK3S4yUYFzCiX58ChI%252BMO626A8A2YS/ujKKEwt%252Bu1IN9KJzxjngPvKZGJqLIm47wIcIrT%252BuWxvYRduGgf4JRHa1G9qeFuVmZBAwPsKW4CFHSGJts7HJ/&gadgetId=106028972272485512849&gadgetOwner=104519982116306737291&gadgetViewer=104519982116306737291&rpctoken=-1181603007&ifpctok=-1181603007&up_quotes_to_show=3" style="height:300px; width: 100%; "></iframe>
+			</div>
+			<h4>How to of the Day</h4>
+			<div>
+			testcontent
+			</div>
+			<h4>test2<h4>
+			<div>
+			test2content
+			</div>
+		</div>
+		<script>
+			$( "#accordion" ).accordion();
+		</script>
+    </div>
+	
+    <div class="four columns myWidgets">
+	  <img id='youtubeLogo' src='images/youtubelogo.jpg'/>
+	 <iframe width="100%" height="381px" scrolling="no"src="http://0bps664l3vqk05dj8qih0t5renri9iic-a-ig-opensocial.googleusercontent.com/gadgets/ifr?exp_rpc_js=1&exp_track_js=1&url=http%3A%2F%2Fwww.gstatic.com%2Fig%2Fmodules%2Fyoutube%2Fv3%2Fyoutube.xml&container=ig&view=home&lang=en&country=US&sanitize=0&v=7c64df3903af4105&parent=http://www.google.com&libs=core:core.io:core.iglegacy:auth-refresh&is_signedin=1&synd=ig&mid=7#st=c%3Dig%26e%3DAPu7icqQaq70uXPD%252B%252BbwDJvVe8CEhZ2Hd0CCdyWfHeG2yiNYakKhqrIDiFjTa2hU/M3dyOkDPJ9y8OJTX34YN/TusB%252BdHI3tWE%252Bw4hcRUqhUWhMR1YZiddvoYdaUVPyodvBzAtQbBEgj&gadgetId=106479066835460828140&gadgetOwner=104519982116306737291&gadgetViewer=104519982116306737291&rpctoken=-859450416&ifpctok=-859450416&up_channel_url_to_preload=http://youtube.com/rss/global/recently_featured.rss&up_rawQuery=&up_search_channel_url1=&up_channel=recently_featured&up_searchTerm=&up_historyEnabled=false&up_showPromo=false&up_username=&up_search_channels=0&up_prefs_version=2&up_search_channel_name2=&up_userHasSeenSharedActivities=true&up_history=&up_search_channel_url2=&up_search_channel_name0=&up_title=YouTube&up_search_channel_url0=&up_current_channel_id=0&up_search_channel_name1=" frameborder="0" allowfullscreen></iframe> 
+    </div>
+  
+    <div class="four columns myWidgets">
+		<div class='six left th'>
+			<a href='#' onclick="changeBGImage('images/backgrounds/wallpaper-203629.jpg')"><img src='images/backgrounds/wallpaper-203629.jpg'/></a>
+		</div>
+		<div class='six left th'>
+			<a href='#' onclick="changeBGImage('images/backgrounds/wallpaper-684667.png')"><img src='images/backgrounds/wallpaper-684667.png'/></a>
+		</div>
+		<div class='six left th'>
+			<a href='#' onclick="changeBGImage('images/backgrounds/wallpaper-1423022.jpg')"><img src='images/backgrounds/wallpaper-1423022.jpg'/></a>
+		</div>
+		<div class='six left th'>
+			<a href='#' onclick="changeBGImage('images/backgrounds/wallpaper-1447333.jpg')"><img src='images/backgrounds/wallpaper-1447333.jpg'/></a>
+		</div>
+		<div class='six left th'>
+			<a href='#' onclick="changeBGImage('images/backgrounds/wallpaper-1779681.jpg')"><img src='images/backgrounds/wallpaper-1779681.jpg'/></a>
+		</div>
+		<div class='six left th'>
+			<a href='#' onclick="changeBGImage('images/backgrounds/wallpaper-2443202.jpg')"><img src='images/backgrounds/wallpaper-2443202.jpg'/></a>
+		</div>
+		<div class='six left th'>
+			<a href='#' onclick="changeBGImage('images/backgrounds/wallpaper-2442625.jpg')"><img src='images/backgrounds/wallpaper-2442625.jpg'/></a>
+		</div>
+		<div class='six left th'>
+			<a href='#' onclick="changeBGImage('images/backgrounds/wallpaper-2456803.jpg')"><img src='images/backgrounds/wallpaper-2456803.jpg'/></a>
+		</div>
+		<div class='six left th'>
+			<a href='#' onclick="changeBGImage('images/backgrounds/wallpaper-2446558.jpg')"><img src='images/backgrounds/wallpaper-2446558.jpg'/></a>
+		</div>
+		<div class='six left th'>
+			<a href='#' onclick="changeBGImage('images/backgrounds/background.jpg')"><img src='images/backgrounds/background.jpg'/></a>
+		</div>
+    </div>
+	
+  </div>
+  
+  <!--ROW 2-->
+  <div class="row">
+  
+       <!--Calendar-->
+       <div class="six columns">
+		<script type="text/javascript" src="http://cdn.widgetserver.com/syndication/subscriber/InsertWidget.js"></script><script type="text/javascript">if (WIDGETBOX) WIDGETBOX.renderWidget('995f3208-a732-4f2d-858a-6c83239ff217');</script>
+	   </div>
+	   
+	   <!--Weather-->
+	   <div class="six columns">
+	   <iframe width="440" scrolling="no" height="350" frameborder="0" src="http://51x1ic.widget.uwa.netvibes.com/widget/frame?uwaUrl=http%3A%2F%2Fwww.netvibes.com%2Fmodules%2Fweather%2Fweather.html&id=uwa-51x1ic-64431&header=1&footer=1&scroller=0&autoLaunch=1&useAppCache=0&offlineMode=0&chromeColor=white&widgetDomain=http%3A%2F%2Ffr.eco.netvibes.com%2Fapps%2F228802%2Fweather&readOnly=0"></iframe>
+	   </div>
+	   
+  </div>
+  
+  
+  
+  <!-- Call to Action Panel
+  <div class="row">
+    <div class="twelve columns">
+    
+      <div class="panel">
+        <h4>Get in touch!</h4>
+            
+        <div class="row">
+          <div class="nine columns">
+            <p>We'd love to hear from you, you attractive person you.</p>
+          </div>
+          <div class="three columns">
+            <a href="#" class="radius button right">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  -->
+  
+  <!-- Footer-->
+  <footer class="row">
+    <div class="twelve columns">
+      <hr />
+      <div class="row">
+        <div class="six columns">
+          <p>&copy; Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="six columns">
+          <ul class="link-list right">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+  </footer>
+  
+  
+</body>
+</html>
